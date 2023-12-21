@@ -1,10 +1,4 @@
-# jsonschema
-[![Qri](https://img.shields.io/badge/made%20by-qri-magenta.svg?style=flat-square)](https://qri.io)
-[![GoDoc](https://godoc.org/github.com/qri-io/jsonschema?status.svg)](http://godoc.org/github.com/qri-io/jsonschema)
-[![License](https://img.shields.io/github/license/qri-io/jsonschema.svg?style=flat-square)](./LICENSE)
-[![Codecov](https://img.shields.io/codecov/c/github/qri-io/jsonschema.svg?style=flat-square)](https://codecov.io/gh/qri-io/jsonschema)
-[![CI](https://img.shields.io/circleci/project/github/qri-io/jsonschema.svg?style=flat-square)](https://circleci.com/gh/qri-io/jsonschema)
-[![Go Report Card](https://goreportcard.com/badge/github.com/qri-io/jsonschema)](https://goreportcard.com/report/github.com/qri-io/jsonschema)
+# jsonschema (dgate-io)
 
 golang implementation of the [JSON Schema Specification](http://json-schema.org/), which lets you write JSON that validates some other json. Rad.
 
@@ -23,11 +17,11 @@ like to submit changes, please see our
 
 ### Developing
 
-We’ve set up a separate document for [developer guidelines](https://github.com/qri-io/jsonschema/blob/master/DEVELOPERS.md)!
+We’ve set up a separate document for [developer guidelines](https://github.com/dgate-io/jsonschema/blob/master/DEVELOPERS.md)!
 
 ## Basic Usage
 
-Here’s a quick example pulled from the [godoc](https://godoc.org/github.com/qri-io/jsonschema):
+Here’s a quick example pulled from the [godoc](https://godoc.org/github.com/dgate-io/jsonschema):
 
 ```go
 package main
@@ -37,7 +31,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/qri-io/jsonschema"
+	"github.com/dgate-io/jsonschema"
 )
 
 func main() {
@@ -120,7 +114,7 @@ func main() {
 
 ## Custom Keywords
 
-The [godoc](https://godoc.org/github.com/qri-io/jsonschema) gives an example of how to supply your own validators to extend the standard keywords supported by the spec.
+The [godoc](https://godoc.org/github.com/dgate-io/jsonschema) gives an example of how to supply your own validators to extend the standard keywords supported by the spec.
 
 It involves three steps that should happen _before_ allocating any Schema instances that use the validator:
 1. create a custom type that implements the `Keyword` interface
@@ -137,7 +131,7 @@ import (
     "fmt"
 
     jptr "github.com/qri-io/jsonpointer"
-    "github.com/qri-io/jsonschema"
+    "github.com/dgate-io/jsonschema"
 )
 
 // your custom validator
